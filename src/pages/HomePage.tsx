@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageId } from '../types';
-import { COMPANY_DETAILS, SERVICES_DATA, TECHNICAL_STANDARDS } from '../data/companyData';
+import { COMPANY_DETAILS, SERVICES_DATA, TECHNICAL_STANDARDS, ASSET_IMAGES } from '../data/companyData';
 import { PerimeterCalculator } from '../components/PerimeterCalculator';
 import {
   Phone,
@@ -98,7 +98,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <div className="lg:col-span-5 flex flex-col justify-center">
               <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl group">
                 <img
-                  src="/src/assets/images/perimeter_electric_fence_1792646340343.jpg"
+                  src={ASSET_IMAGES.perimeterFence}
                   alt="High-tensile perimeter electric fence installation"
                   referrerPolicy="no-referrer"
                   className="w-full h-80 sm:h-96 lg:h-full object-cover transition-transform duration-500 group-hover:scale-105"

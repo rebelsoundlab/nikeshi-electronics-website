@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageId } from '../types';
-import { COMPANY_DETAILS, TECHNICAL_STANDARDS } from '../data/companyData';
+import { COMPANY_DETAILS, TECHNICAL_STANDARDS, ASSET_IMAGES } from '../data/companyData';
 import {
   ShieldCheck,
   MapPin,
@@ -133,7 +133,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             {/* Representative Visual Card */}
             <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-900">
               <img
-                src="/src/assets/images/agricultural_fence_1792646325269.jpg"
+                src={ASSET_IMAGES.agriculturalFence}
                 alt="Agricultural perimeter fence assembly"
                 referrerPolicy="no-referrer"
                 className="w-full h-48 object-cover"

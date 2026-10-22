@@ -1,4 +1,15 @@
 import { ServiceItem, ProjectItem } from '../types';
+import perimeterFenceImg from '../assets/images/perimeter_electric_fence_1792646340343.jpg';
+import solarEnergizerImg from '../assets/images/solar_fence_energizer_1792646324225.jpg';
+import agriculturalFenceImg from '../assets/images/agricultural_fence_1792646325269.jpg';
+import electricalPanelImg from '../assets/images/electrical_control_panel_1792646325520.jpg';
+
+export const ASSET_IMAGES = {
+  perimeterFence: perimeterFenceImg,
+  solarEnergizer: solarEnergizerImg,
+  agriculturalFence: agriculturalFenceImg,
+  electricalPanel: electricalPanelImg,
+};
 
 export const COMPANY_DETAILS = {
   legalName: 'NIKESHI ELECTRONICS & FENCE CONSTRUCTIONS (PVT) LTD',
@@ -51,7 +62,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Livestock containment and wildlife boundary deterrence',
     ],
     iconName: 'ShieldAlert',
-    image: '/src/assets/images/agricultural_fence_1792646325269.jpg',
+    image: ASSET_IMAGES.agriculturalFence,
   },
   {
     id: 'commercial-perimeter',
@@ -80,7 +91,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Private commercial properties requiring 24/7 boundary defense',
     ],
     iconName: 'Building2',
-    image: '/src/assets/images/perimeter_electric_fence_1792646340343.jpg',
+    image: ASSET_IMAGES.perimeterFence,
   },
   {
     id: 'solar-energizers',
@@ -108,7 +119,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Backup hybrid setups where grid power undergoes frequent outages',
     ],
     iconName: 'SunMedium',
-    image: '/src/assets/images/solar_fence_energizer_1792646324225.jpg',
+    image: ASSET_IMAGES.solarEnergizer,
   },
   {
     id: 'electrical-installations',
@@ -136,7 +147,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Commercial building service upgrades and safety overhauls',
     ],
     iconName: 'Zap',
-    image: '/src/assets/images/electrical_control_panel_1792646325520.jpg',
+    image: ASSET_IMAGES.electricalPanel,
   },
   {
     id: 'earthing-maintenance',
@@ -183,7 +194,7 @@ export const PROJECTS_GALLERY: ProjectItem[] = [
       'Tamper & cut detection relay system',
       'Dual-zone pulsing energizer arrangement',
     ],
-    image: '/src/assets/images/perimeter_electric_fence_1792646340343.jpg',
+    image: ASSET_IMAGES.perimeterFence,
     imageNote:
       'Professional temporary image representative of commercial fence build quality and post alignment.',
   },
@@ -202,7 +213,7 @@ export const PROJECTS_GALLERY: ProjectItem[] = [
       'MPPT charging circuit with deep-cycle battery',
       'Heavy-duty lightning arrestor bypass',
     ],
-    image: '/src/assets/images/solar_fence_energizer_1792646324225.jpg',
+    image: ASSET_IMAGES.solarEnergizer,
     imageNote:
       'Professional temporary image illustrative of solar energizer equipment and outdoor enclosure wiring.',
   },
@@ -221,7 +232,7 @@ export const PROJECTS_GALLERY: ProjectItem[] = [
       'Engineered breakaway loops for animal safety',
       'Low-impedance energizer for dense grass resistance',
     ],
-    image: '/src/assets/images/agricultural_fence_1792646325269.jpg',
+    image: ASSET_IMAGES.agriculturalFence,
     imageNote:
       'Professional temporary image representative of agricultural perimeter spacing and warning standard.',
   },
@@ -240,7 +251,7 @@ export const PROJECTS_GALLERY: ProjectItem[] = [
       'Copper protective earth (PE) busbar grounding',
       'Clean cable trunking and circuit identification',
     ],
-    image: '/src/assets/images/electrical_control_panel_1792646325520.jpg',
+    image: ASSET_IMAGES.electricalPanel,
     imageNote:
       'Professional temporary image illustrative of industrial control panel wiring standards and grounding.',
   },
